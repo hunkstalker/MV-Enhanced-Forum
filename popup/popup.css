@@ -1,0 +1,59 @@
+html,
+body {
+    width: 310px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101213;
+    color: #7c888d;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+  line-height: 1.28em;
+}
+
+div label{
+  margin-right: 2%;
+  display: inline;
+}
+
+div input {
+  margin-left: 10px;
+  font-size: 1em;
+  padding: 2px 10px 2px 10px;
+  outline: solid black 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #1c1f22;
+}
+
+.options-container {
+  margin: 3% auto;
+}
+
+.options-container div {
+  padding: 2px 5px 2px 0;
+  width: 145px;
+}
+
+a:hover {
+    background-color: #f6ffc0;
+}
+
+a {
+    background-color: #E5F2F2;
+}
+
+/* GRID */
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+}

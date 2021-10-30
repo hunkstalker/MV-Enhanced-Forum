@@ -1,19 +1,26 @@
 {
     "manifest_version": 2,
-    "name": "mv-forum-enhanced",
-    "version": "1.0",
-  
+    "name": "MV Enhanced Forum",
+    "version": "1.1",
+
     "description": "Enhanced experience for Mediavida Forum.",
-  
+
     "icons": {
-      "48": "icons/border-48.png",
-      "96": "icons/border-96.png"
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
     },
-  
-    "content_scripts": [
-      {
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/icon-48.png",
+        "default_popup": "popup/popup.html"
+    },
+
+    "content_scripts": [{
         "matches": ["*://*.mediavida.com/*"],
         "js": ["script.js"]
-      }
-    ]
-  }
+    }]
+}
